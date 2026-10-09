@@ -1,0 +1,28 @@
+{
+	"$schema": "https://raw.githubusercontent.com/untrustedmodders/plugify/refs/heads/main/schemas/plugin.schema.json",
+	"version": "${VIP_INFINITEAMMO_VERSION}",
+	"name": "vip_infiniteammo",
+	"description": "Infinite reserve ammo for VIPs: the 'InfiniteReserveAmmo' feature picks a pack from vip_infiniteammo.ini (per-weapon reserve magazine counts plus a default). A 0.1 s timer keeps the reserve ammo of every firearm at the pack's value for VIPs with the feature enabled: reloads refill, dropping a weapon to another player snaps the reserve back to what the original owner is entitled to, and only the rounds actually spent above the pack value are gone. A port of the CookiesVip module '[VIP] Infinite Ammo' (vip_infiniteammo).",
+	"author": "_ded_cookies, ported to Plugify",
+	"website": "https://github.com/untrustedmodders/plugify",
+	"license": "GPL-3.0",
+	"entry": "bin/vip_infiniteammo",
+	"platforms": [],
+	"language": "cpp",
+	"dependencies": [
+		{
+			"name": "s2sdk",
+			"constraints": ">=2.18.2"
+		},
+		{
+			"name": "vip",
+			"constraints": ">=1.0.0"
+		},
+		{
+			"name": "hudmenu",
+			"constraints": ">=1.0.0",
+			"optional": true
+		}
+	],
+	"methods": []
+}
