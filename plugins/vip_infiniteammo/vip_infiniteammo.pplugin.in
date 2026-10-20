@@ -1,0 +1,28 @@
+{
+	"$schema": "https://raw.githubusercontent.com/untrustedmodders/plugify/refs/heads/main/schemas/plugin.schema.json",
+	"version": "${VIP_INFINITEAMMO_VERSION}",
+	"name": "vip_infiniteammo",
+	"description": "Infinite ammo for VIPs: the 'InfiniteReserveAmmo' feature picks a pack from vip_infiniteammo.ini. The pack value is the number of reserve MAGAZINES per weapon ('default' plus per-weapon overrides). On weapon_fire and weapon_reload the active firearm's m_pReserveAmmo is kept at N * its max clip; N >= 999 refills the clip instead (the 'god' pack = infinite magazines), and N <= 0 excludes a weapon. Applied once after each spawn too. A port of the CookiesVip module '[VIP] Infinite Ammo' (vip_infiniteammo), rewritten to the partiusfabaa scheme.",
+	"author": "_ded_cookies, ported to Plugify",
+	"website": "https://github.com/untrustedmodders/plugify",
+	"license": "GPL-3.0",
+	"entry": "bin/vip_infiniteammo",
+	"platforms": [],
+	"language": "cpp",
+	"dependencies": [
+		{
+			"name": "s2sdk",
+			"constraints": ">=2.18.2"
+		},
+		{
+			"name": "vip",
+			"constraints": ">=1.0.0"
+		},
+		{
+			"name": "hudmenu",
+			"constraints": ">=1.0.0",
+			"optional": true
+		}
+	],
+	"methods": []
+}
